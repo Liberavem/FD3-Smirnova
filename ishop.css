@@ -1,0 +1,33 @@
+.IShop {
+    border: solid gray 3px;
+    padding: 3px 7px;
+    background-color: #4d82c51f;
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.GoodsList {
+    margin: 20px;
+
+}
+
+.Product {
+    margin: 10px;
+}
+
+.Name {
+    margin: 10px;
+}
+
+.price {
+    margin: 10px;
+}
+
+.Picture {
+    margin: 10px;
+}
+
+.Stock {
+    margin: 10px;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IShop</title>
+</head>
+<body>
+    <div id="container"></div>
+
+    <script src="https://unpkg.com/react@15/dist/react.js"></script> 
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script> 
+
+    <script src="ishop.js"></script>
+    <link rel="stylesheet" type="text/css" href="ishop.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+
+    <script>
+    var goodsList = "Список товаров:";
+    
+    
+    var goodsArr =  [
+    {
+        code: 1,
+        name: "Ноутбук Lenovo",
+        price: "960 BYN",
+        img: 'images/lenovo.jpeg',
+        stock: 'in stock: 25',
+    },
+    {
+        code: 2,
+        name: "Фотокамера Nikon",
+        price: "750 BYN",
+        img: "images/nikon.jpeg",
+        stock : 'in stock: 18',
+    },
+    {
+        code: 3,
+        name: "Apple IPad",
+        price: "1199 BYN",
+        img: "images/ipad.jpeg",
+        stock: 'in stock: 43',
+    },
+
+    {
+        code: 4,
+        name: "Samsung Galaxy",
+        price: "2000 BYN",
+        img: "images/galaxy.jpeg",
+        stock: 'in stock: 28',
+    },
+    {
+        code: 5,
+        name: "Телевизор SUPRA",
+        price: "831 BYN",
+        img: "images/supra.jpeg",
+        stock: 'in stock: 34',
+    }
+  
+];
+
+ReactDOM.render(
+    React.createElement(IShop, {title: goodsList, goods: goodsArr}),
+    document.getElementById('container')
+);
+    </script>
+</body>
+</html>
