@@ -11,12 +11,21 @@
     <script src="https://unpkg.com/react@15/dist/react.js"></script> 
     <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script> 
 
-    <script src="ishop.js"></script>
-    <link rel="stylesheet" type="text/css" href="ishop.css" />
+    <script src="ishopStore.js"></script>
+    <script src="ishopProduct.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="ishopProduct.css" />
+    <link rel="stylesheet" type="text/css" href="ishopStore.css" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
 
     <script>
-    var goodsList = "Список товаров:";
+    var title = {
+            name: "Name",
+            price: "Price",
+            img: "URL",
+            stock: "Quantity",
+            control: "Control",
+        };
     
     
     var goodsArr =  [
@@ -26,6 +35,8 @@
         price: "960 BYN",
         img: 'images/lenovo.jpeg',
         stock: 'in stock: 25',
+        selected: false
+        
     },
     {
         code: 2,
@@ -33,6 +44,7 @@
         price: "750 BYN",
         img: "images/nikon.jpeg",
         stock : 'in stock: 18',
+        selected: false
     },
     {
         code: 3,
@@ -40,6 +52,7 @@
         price: "1199 BYN",
         img: "images/ipad.jpeg",
         stock: 'in stock: 43',
+        selected: false
     },
 
     {
@@ -48,6 +61,7 @@
         price: "2000 BYN",
         img: "images/galaxy.jpeg",
         stock: 'in stock: 28',
+        selected: false
     },
     {
         code: 5,
@@ -55,14 +69,18 @@
         price: "831 BYN",
         img: "images/supra.jpeg",
         stock: 'in stock: 34',
+        selected: false
     }
   
 ];
 
 ReactDOM.render(
-    React.createElement(IShop, {title: goodsList, goods: goodsArr}),
+    React.createElement(Store, {title: title, goods: goodsArr}),
     document.getElementById('container')
 );
+
+
+
     </script>
 </body>
 </html>

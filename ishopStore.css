@@ -1,4 +1,4 @@
-.IShop {
+td {
     border: solid gray 3px;
     padding: 3px 7px;
     background-color: #4d82c51f;
@@ -30,4 +30,11 @@
 
 .Stock {
     margin: 10px;
+}
+tr.Selected {
+    background-color: #4a89dc47;
+}
+
+img {
+    width: 50px;
 }
