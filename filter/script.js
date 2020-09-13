@@ -32,7 +32,7 @@ var Filter = React.createClass({
   
 
  buttonClickHandler: function() {
-   onClick: this.setState({input: ""}, ()=> this.updateFruits());
+   this.setState({input: "", checked: false}, ()=> this.updateFruits());
  },
 
  checkboxSelected: function(event) {
@@ -48,7 +48,7 @@ var Filter = React.createClass({
       return React.DOM.div(null,
           React.DOM.label({className:'Block'},
             React.DOM.input({
-              type:'checkbox', onClick: this.checkboxSelected
+              type:'checkbox', onClick: this.checkboxSelected, checked: this.state.checked
             }),
             React.DOM.input({type:'text', value:this.state.input, onInput: this.textChanged}),
             React.DOM.button({onClick: this.buttonClickHandler}, "Сброс"),
