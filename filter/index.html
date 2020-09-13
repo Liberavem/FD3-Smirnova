@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+   
+</head>
+<body>
+    <div id="container"></div>
+    <script src="https://unpkg.com/react@15/dist/react.js"></script> 
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="filter.css" />
+
+<script>
+
+    let fruitsArr = ["Banana","Orange", "Apple", "Mango", "Pineapple","Grapefruit", "Kiwi", "Lemon","Pear","Peach","Pomegranate"];
+
+    ReactDOM.render(
+    React.createElement(Filter, {fruits: fruitsArr}),
+    document.getElementById('container')
+);
+</script>
+
+</body>
+</html>
