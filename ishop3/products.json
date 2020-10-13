@@ -1,0 +1,42 @@
+[
+    {
+       "code":1,
+       "name":"Ноутбук Lenovo",
+       "price":"960",
+       "img":"images/lenovo.jpeg",
+       "stock":"25",
+       "selected":false
+    },
+    {
+       "code":2,
+       "name":"Фотокамера Nikon",
+       "price":"750",
+       "img":"images/nikon.jpeg",
+       "stock":"18",
+       "selected":false
+    },
+    {
+       "code":3,
+       "name":"Apple IPad",
+       "price":"1199",
+       "img":"images/ipad.jpeg",
+       "stock":"43",
+       "selected":false
+    },
+    {
+       "code":4,
+       "name":"Samsung Galaxy",
+       "price":"2000",
+       "img":"images/galaxy.jpeg",
+       "stock":"28",
+       "selected":false
+    },
+    {
+       "code":5,
+       "name":"Телевизор SUPRA",
+       "price":"831",
+       "img":"images/supra.jpeg",
+       "stock":"34",
+       "selected":false
+    }
+ ]
